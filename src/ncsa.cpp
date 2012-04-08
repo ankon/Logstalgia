@@ -112,7 +112,7 @@ bool NCSALog::parseLine(std::string& line, LogEntry& entry) {
     entry.path      = matches[1];
 //    entry.protocol  = matches[2];
 
-    entry.response_code = matches[3].c_str();
+    entry.response_code = matches[3];
     entry.response_size = atol(matches[4].c_str());
 
     if(matches.size() > 5) {
