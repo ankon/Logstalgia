@@ -127,9 +127,6 @@ bool NCSALog::parseLine(std::string& line, LogEntry& entry) {
         }
     }
 
-    //successful if response code less than 400
-    int code = atoi(entry.response_code.c_str());
-
     entry.setSuccess();
     entry.setResponseColour();
 
